@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        div [class^="col"] {
+            border: 2px solid #000;
+        }
+
+        .row {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h5>大屏样式</h5>
+            </div>
+            <div class="col-4-md">
+                <h5>中屏样式</h5>
+            </div>
+            <div class="col-4-sm">
+                <h5>小屏样式</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4-sm hidden-lg">
+                <h5>大屏隐藏</h5>
+            </div>
+            <div class="col-4-sm hidden-md">
+                <h5>中屏隐藏</h5>
+            </div>
+            <div class="col-4-sm hidden-sm">
+                <h5>小屏隐藏</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4-sm visible-lg">
+                <h5>大屏显示</h5>
+            </div>
+            <div class="col-4-sm visible-md">
+                <h5>中屏显示</h5>
+            </div>
+            <div class="col-4-sm visible-sm">
+                <h5>小屏显示</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
